@@ -1,0 +1,19 @@
+<!DOCTYPE = html>
+		<head>
+    <title>Citi Bike Service</title>
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script type="text/javascript" src="citiBikeService.js"></script>
+  </head>
+  <body>
+
+        <div ng-app = "myApp">
+            <div ng-controller="myController">
+                How long was your ride?
+                <input ng-init="Length" ng-model="userEntry">
+                <button  ng-click="calculateRide()">Enter</button>
+                <p>{{myRides}}<p>
+            </div>
+        </div>
+
+    </body>
+</html>
